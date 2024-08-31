@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio website with typing Effect</title>
+</head>
+<body>
+    <div class = "container">
+        <nav>
+            <div class="logo"> folio <b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hallo</span>
+                <h1>Ich bin <span class="multiText">Software Tester</span> </h1>
+                <p>Beschäftigt als Software Tester bei  attempto GmbH & Co. KG</p>
+           <div class="btns">
+            <button>CV Hunterladen</button>
+            <button>Engagieren</button>
+           </div>
+        </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                   <img src="Image\splash.png" id="splash">
+                   <img src="Image\Profil.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings: ["ISTQB zertifiziert","Manuel und Automatisiert Tester","Software Tester"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1500,
+        })
+
+    </script>
+</body>
+</html>
